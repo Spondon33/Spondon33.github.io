@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="index.css"/>
+  <link rel="shortcut icon" href="favicon.png"/>
+  <title>BMI Calculator</title>
+</head>
+<body>
+<div id="Top">
+  <section>
+    <h1>Body Mass Index Calculator</h1>
+  </section>
+</div>
+
+<p>
+  Body Mass Index or BMI value is the body weight(kg) divided by the square
+  of the height(m).
+</p>
+
+<div class="WeightInput">
+  <label for="weight">Weight :</label><input id="weight" type="number" placeholder="Type your weight(kg)"/>
+</div>
+
+<br/>
+
+<div class="HeightInput">
+  <label for="height">Height :</label><input id="height" type="number" placeholder="Type your Height(m)"/>
+</div>
+
+<div class="calcButton">
+  <button id="calc">Calculate</button>
+</div>
+
+<div class="resultValue">
+  <label for="result">Result :</label><input id="result" readonly="readonly"/>
+</div>
+
+<br/>
+
+<div class="Type">
+  <label for="type">Type :</label><input id="type" readonly="readonly"/>
+</div>
+
+<div class="BMITable">
+  <table>
+    <tr id="topic">
+      <th><b>BMI Value</b></th>
+      <th><b>Type</b></th>
+    </tr>
+    <tr id="underweight">
+      <th>18.5</th>
+      <th>Underweight</th>
+    </tr>
+    <tr id="normal">
+      <th>18.5-24.9</th>
+      <th>Normal</th>
+    </tr>
+    <tr id="overweight">
+      <th>25.0-29.9</th>
+      <th>Overweight</th>
+    </tr>
+    <tr id="obese">
+      <th>30.0-40.0</th>
+      <th>Obese</th>
+    </tr>
+    <tr id="extremeObese">
+      <th>>40.0</th>
+      <th>Extreme Obese</th>
+    </tr>
+  </table>
+</div>
+
+<canvas></canvas>
+</body>
+<script src="index.js"></script>
+</html>
